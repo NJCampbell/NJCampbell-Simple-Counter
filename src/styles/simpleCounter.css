@@ -1,6 +1,9 @@
+body {
+    background-color: #2596be;
+}
 .counter-display {
     text-align: center;
-    margin: 50px auto;
+    margin: 100px auto;
 }
 
 .counter-display div {

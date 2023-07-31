@@ -15,25 +15,26 @@ const Home = ({ counter }) => {
 	return (
 		<>
 			{/* <h1>{props.counter}</h1> */}
-			<SimpleCounter 
+			<SimpleCounter
 				onesDigit={calculateSeconds(counter, 1)}
 				tensDigit={calculateSeconds(counter, 10)}
-				hundredsDigit={calculateSeconds(counter,100)}
+				hundredsDigit={calculateSeconds(counter, 100)}
 				thousandsDigit={calculateSeconds(counter, 1000)}
 				tenThousandsDigit={calculateSeconds(counter, 10000)}
 				hundredThousandsDigit={calculateSeconds(counter, 100000)}
 			/>
+
 		</>
 	);
 };
 
-Home.PropTypes = {
+Home.propTypes = {
 	counter: PropTypes.number,
 	tensDigit: PropTypes.number,
-    hundredsDigit: PropTypes.number,
-    thousandsDigit: PropTypes.number,
-    tenThousandsDigit: PropTypes.number,
-    hundredThousandsDigit: PropTypes.number
+	hundredsDigit: PropTypes.number,
+	thousandsDigit: PropTypes.number,
+	tenThousandsDigit: PropTypes.number,
+	hundredThousandsDigit: PropTypes.number
 }
 
 export default Home;
